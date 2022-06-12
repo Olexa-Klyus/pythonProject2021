@@ -1,0 +1,7 @@
+# comment
+'''comment'''
+"""comment"""
+print('hello world')
+
+print(1,2,3,sep='__')
+
