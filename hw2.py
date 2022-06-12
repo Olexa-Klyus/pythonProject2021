@@ -2,29 +2,34 @@
 # - первый записывает в эту переменную запись
 # - второй возвращает все записи
 
-def notebook():
-    todo_list = []
-
-    def add_todo(todo):
-        nonlocal todo_list
-        todo_list.append(todo)
-        print(todo_list)
-
-    # def get_all():
-    #     nonlocal todo_list
-    #     return todo_list
-    #     pass
-
-    return add_todo
-
-
-todo1 = notebook()
-todo1('7-00 підйом')
-todo1('8-00 сніданок')
-todo1('9-00 навчання')
-todo1('12-00 обід')
-todo1('17-00 вечеря')
-
+# def notebook(*get):
+#     todo_list = ['hhh']
+#
+#     def add_todo(todo):
+#         nonlocal todo_list
+#         todo_list.append(todo)
+#         print(todo_list)
+#
+#         def get_all():
+#             nonlocal todo_list
+#             print(todo_list)
+#             return todo_list
+#
+#         if not get:
+#             get_all()
+#
+#     return add_todo
+#
+#
+# todo_add = notebook()
+# todo_add('7-00 підйом')
+# todo_add('8-00 сніданок')
+# todo_add('9-00 навчання')
+# todo_add('12-00 обід')
+# todo_add('17-00 вечеря')
+#
+# todo_add = notebook(1)
+# print(todo_add)
 
 # def decor_counter(func_in, count=0):
 #     def counter(*args, **kwargs):
@@ -51,3 +56,17 @@ todo1('17-00 вечеря')
 # func1('11', 33)
 # func1('11', 33)
 # func1('11', 33)
+
+
+def summa1(num1: int):
+    res_str = ''
+    l = list(str(num1))
+    for v, i in enumerate(l):
+        if i != '0':
+            res_str = res_str + str(int(i) * 10 ** (len(l) - v - 1))
+            if len(l) - v > 1:
+                res_str = res_str + ' + '
+    return res_str
+
+
+print(summa1(34005))
