@@ -138,3 +138,42 @@
 # print(fibonachi(10))
 
 # ------------------------------------------------------------------
+# порахувати кількість парних і непарних цифр числа,
+#   наприклад: х = 225688 -> п = 5, н = 1;
+#          х = 33294 -> п = 2, н = 3
+
+
+# def count_parni(num1):
+#     parni = ne_parni = 0
+#     lst = list(str(num1))
+#     lst_parni = ['2', '4', '6', '8']
+#     for i in lst:
+#         if lst_parni.count(i) > 0:
+#             parni += 1
+#         else:
+#             ne_parni += 1
+#     res = f'x={num1} парні-{parni} непарні-{ne_parni}'
+#
+#     return res
+#
+#
+# print(count_parni(16547865413513513856))
+
+# ------------------------------------------------------------------
+# прога, що виводить кількість кожного символа з введеної строки,
+#   наприклад:
+#   st = 'as 23 fdfdg544' #введена строка
+
+# def symbol_counter(txt: str):
+#     lst = list(txt)
+#     symbol_list = list(set(txt))
+#
+#     for i in symbol_list:
+#         count = lst.count(i)
+#         print(f"'{i}'-> {count}")
+#
+#
+# symbol_counter('oijnwefffffofcw sc4561')
+
+# ------------------------------------------------------------------
+
