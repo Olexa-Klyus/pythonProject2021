@@ -75,7 +75,8 @@
 #     l = list(str(num1))
 #     for v, i in enumerate(l):
 #         if i != '0':
-#             res_str = res_str + str(int(i) * 10 ** (len(l) - v - 1))
+#             # res_str = res_str + str(int(i) * 10 ** (len(l) - v - 1))
+#             res_str = res_str + i + '0' * (len(l) - v - 1)
 #             if len(l) - v > 1:
 #                 res_str = res_str + ' + '
 #     return res_str
@@ -137,4 +138,3 @@
 # print(fibonachi(10))
 
 # ------------------------------------------------------------------
-
